@@ -1,8 +1,6 @@
 from enum import IntEnum, Enum
 from typing import Optional
-
 from pydantic import BaseModel
-
 
 class Priority(IntEnum, Enum):
     normal = 0,
@@ -10,11 +8,9 @@ class Priority(IntEnum, Enum):
     fatal = 2,
     success = 3
 
-
 class Attachment(BaseModel):
     content: str
     pretext: str
-
 
 class Message(BaseModel):
     channel_id: str
