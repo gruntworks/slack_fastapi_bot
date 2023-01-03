@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "bde52836-1a18-4bae-8069-c383973bd68b",
+		"name": "Dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "bot send normal message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"This is normal message\",\r\n    \"text\":\"Normal message description\",\r\n    \"priority\":0,\r\n    \"channel_id\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/send_channel_msg",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"send_channel_msg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bot send alert message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"This is alert title\",\r\n    \"text\":\"Alert description\",\r\n    \"priority\":1,\r\n    \"channel_id\": \"test\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/send_channel_msg",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"send_channel_msg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bot send error message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"This is alert title\",\r\n    \"text\":\"Error description and attachment\",\r\n    \"priority\":2,\r\n    \"channel_id\": \"test\",\r\n    \"attachment\":{\r\n        \"pretext\": \"Attachment pretext\",\r\n        \"content\": \"{'name': 'Dell Alienware', 'processor': 'Intel Core i7'}\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/send_channel_msg",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"send_channel_msg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bot send success message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"This is success title\",\r\n    \"text\":\"Success text description\",\r\n    \"priority\":3,\r\n    \"channel_id\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/send_channel_msg",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"send_channel_msg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
