@@ -2,6 +2,8 @@
 </br>
 
 ### Setup environment:
+App needs to be created at `https://api.slack.com/apps`  
+
 1. `python -m venv env` to create new virtual env
 
 2. `pip install -r requirements.txt` to install dependencies listed in requirements.txt.
