@@ -1,13 +1,10 @@
 import logging
-import os
 from fastapi import FastAPI, HTTPException
-from dotenv import load_dotenv
 from blocks import priority_block, priority_attachment
 from channels import get_channel
 from models import Message
 from main import send_to_channel
 
-load_dotenv(dotenv_path='../.env')
 app = FastAPI()
 
 @app.post("/send_channel_msg")
